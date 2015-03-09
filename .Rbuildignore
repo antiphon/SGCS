@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+.rda$
+.gitignore
+test/*
+todo.txt
+src/*.o
