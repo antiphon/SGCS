@@ -1,11 +1,23 @@
 # History files
 .Rhistory
 
+src/*so
+
+
 # Example code in package build process
 *-Ex.R
 
 # R data files from past sessions
 .Rdata
+*.rda
+
+# tests
+test/*
+
+# todo
+todo.txt
 
 # RStudio files
 .Rproj.user/
+.Rproj.user
+*Rproj
