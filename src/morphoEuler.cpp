@@ -38,12 +38,13 @@ extern "C" {
       if(arcs.size()>0){
         /// first the length ///
         for(i=0; i< (int) arcs.size(); i++){
-          v += (arcs.at(i).at(2)-arcs.at(i).at(1));
+          v += arcs.at(i).at(2) - arcs.at(i).at(1);
           S += PI + arcs.at(i).at(1) - arcs.at(i).at(2);
         }
-        //v*= graph->par/2.0; // this is U
-        //v /= graph->par/2.0; // this is curvature sum
-        v -= S/2.0;
+        //v*= R; // this is U
+        //v /= R; // this is curvature sum
+        v = v + S;
+        v /= 2.0*PI;
       }
       else v = 0;
       graph->oldpar = graph->par;

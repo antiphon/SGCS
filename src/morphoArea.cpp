@@ -32,7 +32,7 @@ extern "C" {
     double R, v;
     for(k=nrvec-1; k >-1; k-- ){
       R = rvec[k];
-      graph->par = R;   // for the arc-calculator
+      graph->par = R * 2.0;   // for the arc-calculator
       graph->sg_calc();
       arcs = morphoArcs(graph);
       v = 0.0;
@@ -41,12 +41,11 @@ extern "C" {
           ten = arcs.at(i).at(2);
           tst = arcs.at(i).at(1);
           ci  = (int)arcs.at(i).at(0);
-          
-          v += graph->par/2.0 * (ten-tst);
-          v += pp->getX(&ci)*sin(ten)- pp->getY(&ci)*cos(ten)+
-          pp->getY(&ci)*cos(tst)- pp->getX(&ci)*sin(tst);
+          v += R * R * (ten-tst);
+          v += R * (pp->getX(&ci)*sin(ten)- pp->getY(&ci)*cos(ten) +
+                    pp->getY(&ci)*cos(tst)- pp->getX(&ci)*sin(tst));
         }
-        v*= graph->par/4.0;
+        //v*= graph->par/4.0;
       }
       else v = NA_REAL;
       graph->oldpar = graph->par;
