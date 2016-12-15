@@ -4,4 +4,5 @@
 .gitignore
 test/*
 todo.txt
-src/*.o
+src/*.o$
+README.md

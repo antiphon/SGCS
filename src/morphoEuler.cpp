@@ -1,6 +1,6 @@
 #include <R.h>
 #include <vector>
-#include "pp.h"
+#include "Pp.h"
 #include "Graph.h"
 #include "Rextras.h"
 #include "arcs.h"
