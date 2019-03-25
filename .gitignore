@@ -1,8 +1,9 @@
 # History files
 .Rhistory
 
-src/*.o
+src/*.o$
 *.o
+*.so
 
 # Example code in package build process
 *-Ex.R

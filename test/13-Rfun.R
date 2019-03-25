@@ -5,7 +5,7 @@ load_all(".")
 #############################################################################
 ## check Poisson
 if(1){
-  d <- 2
+  d <- 3
   set.seed(3)
   rv <- seq(0.0, 0.3, length=40)
   r3 <- function(n=100) list(coord=matrix(runif(d*n), ncol=d), bbox=matrix(rep(0:1,d),2))
@@ -19,7 +19,7 @@ if(1){
   
   df1$R<-qq[2,]
   
-  par(mfrow=c(2,1))
+  par(mfrow=c(1,1))
   plot(df1)
   lines(rv, qq[1,], col=3)
   lines(rv, qq[3,], col=3)

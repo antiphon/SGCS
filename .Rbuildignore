@@ -5,4 +5,5 @@
 test/*
 todo.txt
 src/*.o$
+src/*.so$
 README.md

@@ -1,6 +1,7 @@
 # compare different poor estimators for clustfun
 
 # ratio
+load("test_patterns.rda")
 par(mfrow=c(3,1))
 
 for(x in list(x1,x2,x3)){

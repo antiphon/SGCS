@@ -2,8 +2,8 @@ Package: SGCS
 Type: Package
 Title: Spatial Graph Based Clustering Summaries for Spatial Point
         Patterns
-Version: 2.5
-Date: 2016-11-09
+Version: 2.7
+Date: 2019-03-25
 Author: Tuomas Rajala
 Maintainer: Tuomas Rajala <tuomas.rajala@iki.fi>
 Depends: spatstat
@@ -11,6 +11,6 @@ Description: Graph based clustering summaries for spatial point patterns.
     Includes Connectivity function, Cumulative connectivity function and clustering
     function, plus the triangle/triplet intensity function T.
 License: GPL (>=2)
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1
 NeedsCompilation: yes
 Packaged: 2016-10-10 12:14:01 UTC; antiphon
